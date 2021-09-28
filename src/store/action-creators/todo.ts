@@ -14,7 +14,7 @@ export const fetchTodos = (page = 1 , limit = 10) => {
             dispatch({type:TodoActionTypes.FETCH_TODOS_SUCCESS,payload:response.data})
         } catch (e) {
             dispatch({type:TodoActionTypes.FETCH_TODOS_ERROR,
-                payload:"Произошла ошибка при загрузке пользователей"})
+                payload:"Произошла ошибка при загрузке списков"})
         }
 
     }
